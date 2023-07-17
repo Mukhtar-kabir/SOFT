@@ -2,10 +2,12 @@
 let menuBtn = document.querySelector("#menu-btn");
 let item = document.querySelector(".item");
 
-menuBtn.onclick = () => {
+menuBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+
   menuBtn.classList.toggle("fa-times");
   item.classList.toggle("active");
-};
+});
 
 const navLink = document.querySelectorAll(".nav_link");
 
@@ -42,6 +44,7 @@ const overlay = document.querySelector(".overlay");
 const closeBtn = document.querySelector(".close-btn");
 const descriptionBox = document.querySelector(".description-box");
 const mainSectionProduct = document.querySelectorAll(".main-section-product");
+const product = document.querySelectorAll(".product");
 
 const open = function () {
   overlay.classList.remove("hidden");
@@ -50,6 +53,10 @@ const open = function () {
 
 for (let i = 0; i < mainSectionProduct.length; i++) {
   mainSectionProduct[i].addEventListener("click", open);
+}
+
+for (let i = 0; i < product.length; i++) {
+  product[i].addEventListener("click", open);
 }
 
 const close = function () {

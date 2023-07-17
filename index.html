@@ -8,10 +8,14 @@
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
-    <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script defer src="script.js"></script>
   </head>
   <body>
     <nav>
@@ -19,10 +23,12 @@
         <h1 class="logo">SOFT<span>.</span></h1>
       </div>
       <div class="item">
-        <li><a class="nav_link" href="#" class="active">Home</a></li>
-        <li><a class="nav_link" href="About.html">About</a></li>
-        <li><a class="nav_link" href="#">Shop</a></li>
-        <li><a class="nav_link" href="#">Blog</a></li>
+        <ul>
+          <li><a href="index.html" class="nav_link active">Home</a></li>
+          <li><a href="About.html" class="nav_link">About</a></li>
+          <li><a href="shop.html" class="nav_link">Shop</a></li>
+          <li><a href="#" class="nav_link">Blog</a></li>
+        </ul>
       </div>
 
       <div class="links">
@@ -41,7 +47,7 @@
           <div class="content-title">
             <h3>Soft and More</h3>
             <h1>Simplify Everything.</h1>
-            <button>Explore Now</button>
+            <a href="shop.html" class="button"> expolre now </a>
           </div>
 
           <div class="image">
@@ -68,7 +74,7 @@
         <div class="texture-title">
           <h3>#forhim</h3>
           <img src="src/img1.JPG" alt="" />
-          <button>Shop Now</button>
+          <a href="shop.html" class="btn"> shop now </a>
         </div>
 
         <div class="products">
@@ -112,6 +118,38 @@
             <i class="fa fa-heart icon"></i>
             <h3>Men Simple Round</h3>
             <h4>$990.<span>00</span></h4>
+          </div>
+
+          <!-- ---------------- -->
+          <div class="description">
+            <div class="description-box hidden">
+              <button class="close-btn">&times;</button>
+              <h3>Gamero Jacket - Black</h3>
+              <div class="price">
+                <h2>$990.<span>00</span></h2>
+                <button>Add to Cart</button>
+              </div>
+
+              <div class="heading">
+                <h1>Description:</h1>
+                <h2>Review 1</h2>
+              </div>
+
+              <div class="rate">
+                <h2>Rate:</h2>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <p class="text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Incidunt at molestiae voluptas aliquam tenetur numquam
+                dignissimos laboriosam doloribus voluptate? Dolor nisi voluptas
+                impedit soluta aut consectetur ab veniam, quod sapiente.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -214,7 +252,7 @@
         <div class="main-section-texture">
           <h3>#forher</h3>
           <img src="src/womenImg7.JPG" alt="" />
-          <button>Shop now</button>
+          <a href="shop.html" class="btn"> shop now </a>
         </div>
       </div>
     </main>
@@ -251,8 +289,6 @@
       <div class="footer--container">
         <div class="footer-logo">
           <h1>SOFT<span>.</span></h1>
-          <h4>Copyright &copy; 2023soft</h4>
-          <h4>All rights reserved</h4>
         </div>
 
         <div class="about-soft">
@@ -291,6 +327,9 @@
             </a>
           </div>
         </div>
+      </div>
+      <div class="copy-right">
+        <h4>Copyright &copy; 2023 soft | All rights reserved.</h4>
       </div>
     </footer>
     <div class="overlay hidden"></div>
